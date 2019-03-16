@@ -1,0 +1,9 @@
+#!/usr/local/bin/python2.7
+__author__ = 'JosePlascencia'
+
+from kafka_worker.bin.cli import get_parser
+
+if __name__ == '__main__':
+    parser = get_parser()
+    args = parser.parse_args()
+    args.func(args)
